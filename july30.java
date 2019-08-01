@@ -13,8 +13,11 @@ public class july30 {
 		String candy =new String();
 	
 		int blue= 0 ;
-		String skating=" skating is $6 per person";
-		String movies=" movies only $8 per person";
+		String museum="museum is free";
+		String riverwalk="rive walk free";
+		String park= " park free";
+		String skating=" skating is $6 ";
+		String movies=" movies only $8 ";
 		String arcade="  arcade is only $40 for unlimited tokens";
 		String zoo="zoo is only $15 per person";
 		String carnival= " carnival all day passes are $30";
@@ -23,32 +26,59 @@ public class july30 {
 		String name ="";
 		String date ="";
 		
-		System.out.println("enter your name");
+		System.out.println("Enter your name: ");
 		name=pop.nextLine();
 		
-       System.out.println("would you like to be indoor or outdoor");
+		
+       System.out.println("Would you like to be indoor or outdoor?");
 		date=pop.nextLine();
 		
-	   System.out.println("please enter your budget");
+	   System.out.println("Please enter your budget:");
 	    blue=pop.nextInt();
 	    
 	    
 	    
-	     if (date.equalsIgnoreCase("indoor") && blue <= 30) {
-	     
+	     if (date.equalsIgnoreCase("indoor") && blue >= 30) {
+	    	 
+	    	 System.out.println(museum);
 	    	 System.out.println(skating);
 	    	 System.out.println(movies);
 	    	 System.out.println(arcade);
+	    	 
 	     }
-	    	 if (date.equalsIgnoreCase("outdoor") && blue <= 30) { 
-	    		
+	
+	     if (date.equalsIgnoreCase("indoor")&& blue <= 30)
+	     {
+	     
+	    	 System.out.println(museum);
+	    	 System.out.println(skating);
+	    	 System.out.println(movies);
+	    	 System.out.println(arcade);
+	    	 
+	     }
+	    	
+	    		 
+	    	 if (date.equalsIgnoreCase("outdoor")&& blue <= 30) {
+	    		 
+	    		 System.out.println(riverwalk);
+	    		 System.out.println(park);
 	    		 System.out.println(zoo);
 	    		 System.out.println(carnival);
 	    		 System.out.println(gocarts);
 	    		 System.out.println(drivein);
-	     }
-	    	
+	    	 }
+	    	 if (date.equalsIgnoreCase("outdoor")&& blue >30 )
+	    	 { 
+	    		
+	    		 System.out.println(riverwalk);
+	    		 System.out.println(park);
+	    		 System.out.println(zoo);
+	    		 System.out.println(carnival);
+	    		 System.out.println(gocarts);
+	    		 System.out.println(drivein);
+	    	 }	 
 	    	 
-	    	 }
-	    	 }
+	    	 }        	
+	}
+	    	
 	
